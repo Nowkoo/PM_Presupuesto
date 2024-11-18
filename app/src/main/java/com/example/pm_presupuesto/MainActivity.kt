@@ -80,17 +80,19 @@ fun crearTopAppBar(presupuesto: String) {
         title = {
             Row {
                 Text(
-                    text = "Presupuesto actual: "
+                    text = "Presupuesto actual: ",
+                    color = Color.White
                 )
 
                 Text(
                     text = "$presupuesto€",
-                    fontWeight = FontWeight.Bold
+                    fontWeight = FontWeight.Bold,
+                    color = Color.White
                 )
             }
         },
         colors = TopAppBarDefaults.centerAlignedTopAppBarColors(
-            containerColor = Color.LightGray
+            containerColor = Color(207, 86, 0)
         )
     )
 }
